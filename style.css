@@ -1,0 +1,398 @@
+/*
+$text-color: #eee;
+$darkest: #111;
+$darker: #222;
+$dark: #555;
+$medium: #777;
+$light: #eee;
+$grey: #bbb;
+$text-bg: #333;
+*/
+@font-face {
+  font-family: 'SFChaerilidae';
+  src: url("../fonts/SFChaerilidae.ttf") format("truetype"); }
+body {
+  background: #070d07;
+  color: #ecf8ec;
+  text-align: justify;
+  line-height: 1.5em;
+  font-family: "Roboto";
+  font-size: 16px;
+  width: 100%; }
+
+.titlebar {
+  background: #0e0e0e;
+  padding: 10px 0px;
+  padding-left: 5%;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  font: 24px 'SFChaerilidae';
+  color: #eee; }
+  .titlebar a:hover {
+    text-decoration: none; }
+
+a, a:visited {
+  color: #aaa;
+  text-decoration: none; }
+
+a:hover {
+  color: #aaa;
+  text-decoration: underline; }
+
+h1,
+h2 {
+  color: #549555;
+  font: "Roboto Condensed" 2.5em;
+  font-weight: 300; }
+
+h3 {
+  font-weight: 300; }
+
+div {
+  margin: auto;
+  font: "Roboto";
+  font-weight: 300; }
+  div .header {
+    margin-top: 40px; }
+    div .header .header-left h1.top {
+      font-size: 3.5em;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin-top: 0px; }
+    div .header .header-left h2.top {
+      font-size: 2em;
+      letter-spacing: 1px;
+      text-align: left;
+      margin-top: 20px;
+      margin-right: 15px;
+      padding-bottom: 0px;
+      font-weight: 300;
+      color: #aaa; }
+    div .header .header-right {
+      text-align: right;
+      font-size: 0.8em; }
+      div .header .header-right h2 {
+        margin-top: 10px; }
+      div .header .header-right h3 {
+        font-size: 1.4em;
+        margin-top: -5px; }
+      div .header .header-right a {
+        font-weight: 500;
+        color: #71ae72;
+        text-decoration: none; }
+  div .btn-primary {
+    background-color: #0d1d0d;
+    border-color: #0d1d0d;
+    min-width: 60px; }
+  div .btn-primary.active, div .btn-primary.active:hover, div .btn-primary.active.focus, div .btn-primary:hover, div .btn-primary:active, div .btn-primary:focus, div .btn-primary:active:hover {
+    background-color: #315631;
+    border-color: #0d1d0d; }
+  div .title {
+    text-align: left; }
+  div .text {
+    padding: 15px;
+    float: left;
+    border-radius: 8px; }
+  div .full-width {
+    margin-bottom: 30px; }
+    div .full-width h3 {
+      color: #549555; }
+  div .key {
+    margin-bottom: 50px; }
+    div .key .key1 {
+      padding: 10px;
+      padding-left: 10%; }
+    div .key .key2 {
+      padding: 10px; }
+    div .key h3 {
+      margin: 0px 0px 5px 0px;
+      font-weight: 400; }
+  div .data-info {
+    margin-bottom: 50px; }
+    div .data-info span.emphasis {
+      color: #549555;
+      font-family: "Roboto Condensed";
+      font-weight: 400;
+      font-size: 1.2em; }
+  div .insight {
+    text-align: center;
+    margin: 40px 0; }
+    div .insight h3 {
+      font-size: 1.5em;
+      font-family: "Roboto Condensed";
+      font-weight: 300;
+      line-height: 1.5em; }
+    div .insight h3 span.emphasis {
+      color: #549555;
+      font-weight: 600; }
+  div .stats {
+    display: inline-block;
+    padding: 1%;
+    vertical-align: top;
+    text-align: center; }
+    div .stats h3, div .stats h4 {
+      margin-top: 0px;
+      font-weight: normal; }
+    div .stats h4 {
+      margin-bottom: 0.75em; }
+  div .no-inline {
+    display: block; }
+
+.divider {
+  margin-bottom: 40px;
+  width: 100%;
+  background: #315631;
+  padding: 30px 0;
+  font-style: italic;
+  margin-top: 60px;
+  display: table; }
+  .divider h2 {
+    text-align: center;
+    margin: 0px; }
+  .divider .left h2 {
+    color: #ecf8ec;
+    font-family: "Roboto Condensed";
+    font-weight: 700;
+    font-size: 4em;
+    width: 100%;
+    margin-bottom: 10px; }
+  .divider .right h2 {
+    color: #ecf8ec;
+    font-weight: 300;
+    margin-bottom: 0px;
+    line-height: 40px;
+    text-align: center; }
+
+.note {
+  color: #777;
+  font-size: 14px; }
+
+.feedback {
+  text-align: center;
+  padding: 20px;
+  border-radius: 4px;
+  background: #0d1d0d; }
+  .feedback h3 {
+    margin: 0px; }
+
+.story {
+  margin-top: 140px;
+  margin-bottom: 70px;
+  font-weight: bold; }
+  .story h1, .story h2, .story h3 {
+    color: #ecf8ec;
+    text-align: center;
+    margin-top: 55px; }
+  .story h1 {
+    font: 2em "Roboto Condensed"; }
+  .story h2 {
+    font: 1.5em "Roboto";
+    color: #549555; }
+  .story h3 {
+    font: 1.2em "Roboto";
+    margin-top: 45px;
+    color: #417241; }
+
+.calculator {
+  text-align: center; }
+  .calculator h1 {
+    color: #315631;
+    font-size: 2em; }
+  .calculator input, .calculator button {
+    background: #0d1d0d;
+    padding: 15px;
+    border: none;
+    margin: 10px auto;
+    display: inline-block;
+    text-align: center; }
+  .calculator input:focus {
+    outline: 1px #ecf8ec; }
+  .calculator .results {
+    margin-top: 70px; }
+    .calculator .results h2 {
+      font: 28px "Roboto Condensed";
+      font-weight: 500; }
+      .calculator .results h2 span {
+        color: #ecf8ec;
+        font-size: 34px; }
+
+.distribution {
+  text-align: center; }
+  .distribution hr {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    display: none; }
+  .distribution h1 {
+    font: 24px "Roboto Condensed";
+    color: #ecf8ec; }
+    .distribution h1 span {
+      color: #549555;
+      font-weight: bold; }
+  .distribution h2 {
+    font: 20px "Roboto Condensed";
+    color: #417241; }
+    .distribution h2 span {
+      font-weight: bold; }
+  .distribution .top span, .distribution h2.top {
+    color: #71ae72; }
+  .distribution .bottom span, .distribution h2.bottom {
+    color: #417241; }
+  .distribution h3 {
+    font: 20px "Roboto";
+    color: #aaa; }
+    .distribution h3 span {
+      font-weight: bold;
+      font-size: 24px;
+      color: #ecf8ec; }
+
+@media (max-width: 992px) {
+  .distribution hr {
+    display: block; } }
+#pctincome .axis path,
+#pctincome .axis line {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.05);
+  stroke-width: 1;
+  shape-rendering: crispEdges; }
+#pctincome path.line {
+  stroke: #315631; }
+
+div.header {
+  min-height: 150px;
+  margin-top: 0px;
+  padding-top: 40px; }
+  div.header .header-left {
+    max-width: 100%; }
+    div.header .header-left h1.top {
+      color: #ecf8ec;
+      text-align: left; }
+    div.header .header-left h2 {
+      color: #aaa;
+      font-weight: 400;
+      margin-top: 5px;
+      text-align: left;
+      margin-bottom: 15px; }
+
+.header-bg {
+  background: url("img/bg.png");
+  background-position: center;
+  background-size: cover; }
+
+.btn-group {
+  margin: auto; }
+  .btn-group .btn, .btn-group .btn-default {
+    font: 1.1em 'Roboto Condensed';
+    color: #ecf8ec; }
+    .btn-group .btn input, .btn-group .btn-default input {
+      background: none;
+      border: none; }
+
+.btn.active.focus {
+  outline: none; }
+
+svg text {
+  fill: #ecf8ec; }
+svg path.domain {
+  fill: #070d07; }
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  font: 20px 'Roboto';
+  font-weight: 600;
+  width: 60px;
+  height: 32px;
+  padding: 8px;
+  background: #315631;
+  border-radius: 2px;
+  pointer-events: none;
+  line-height: 16px; }
+
+path.line {
+  stroke: rgba(255, 255, 255, 0.3);
+  fill: none;
+  stroke-width: 2px; }
+
+path.domain, g.tick line {
+  stroke: #aaa; }
+
+path#USA {
+  stroke: red;
+  stroke-width: 2.5px; }
+
+.data-point-text {
+  fill: #070d07;
+  font: 12px 'Roboto Condensed';
+  font-weight: 600; }
+
+.data-point rect {
+  fill: #fff;
+  fill-opacity: 0.1; }
+
+a.statebutton, a.statebutton2 {
+  padding: 5px 12px;
+  background: #0d1d0d;
+  margin: 5px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-weight: 600; }
+
+a.statebutton:hover, a.statebutton2:hover {
+  background: #315631;
+  text-decoration: none; }
+
+.statebutton2.r_gain {
+  border: 2px solid #a03030; }
+
+.statebutton2.d_gain {
+  border: 2px solid #4b50af; }
+
+#chart2, #chart3, #chart4 {
+  margin-bottom: 40px; }
+
+#chart3 .btn-group > .btn-primary, #chart2 .btn-group > .btn-primary, #chart1 .btn-group > .btn-primary, #chart4 .btn-group > .btn-primary {
+  margin: 10px;
+  border-radius: 4px; }
+
+#chart2 .tooltip-holder, #chart3 .tooltip-holder2, #chart4 .tooltip-holder2 {
+  position: relative;
+  width: 100%; }
+
+#chart2 div.tooltip2, #chart3 div.tooltip3, #chart4 div.tooltip3 {
+  position: absolute;
+  top: 20px;
+  left: 55px;
+  background: #0d1d0d;
+  padding: 0px 10px;
+  border-radius: 4px; }
+
+#chart2 div.tooltip2 h1, #chart3 div.tooltip3 h1, #chart4 div.tooltip3 h1 {
+  font-weight: 600; }
+
+@media (max-width: 620px) {
+  div .header .header-left h1.top {
+    font-size: 1.8em; }
+
+  div .header .header-left h2 {
+    font-size: 1.4em; } }
+circle#HI, circle#DC {
+  fill: red; }
+
+.data-text h1#bad {
+  color: #a03030;
+  margin-bottom: 40px; }
+.data-text h1 {
+  text-align: center;
+  font: 58px "Roboto Condensed"; }
+  .data-text h1 span {
+    font-size: 20px;
+    color: #ecf8ec;
+    margin-top: -15px;
+    position: absolute; }
+.data-text h3 {
+  color: #417241; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,388 @@
+$font1: 'Roboto';
+$font2: 'Roboto Condensed';
+$text-color: #ecf8ec;
+$darkest: #070d07;
+$darker: #315631;
+$dark: #417241;
+$medium: #549555;
+$light: #71ae72;
+$grey: #aaa;
+$text-bg: #0d1d0d;
+/*
+$text-color: #eee;
+$darkest: #111;
+$darker: #222;
+$dark: #555;
+$medium: #777;
+$light: #eee;
+$grey: #bbb;
+$text-bg: #333;
+*/
+@font-face {
+    font-family: 'SFChaerilidae';
+    src: url('../fonts/SFChaerilidae.ttf') format('truetype');
+}
+
+body {
+  background: $darkest;
+  color:$text-color;
+  text-align: justify;
+  line-height: 1.5em;
+  font-family: $font1;
+  font-size: 16px;
+  width: 100%;
+}
+
+.titlebar {
+    background: #0e0e0e;
+    padding: 10px 0px;
+    padding-left: 5%;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    font: 24px 'SFChaerilidae';
+    color: #eee;
+    a:hover {text-decoration: none;}
+}
+
+a, a:visited {color: $grey; text-decoration: none;}
+a:hover {color: $grey; text-decoration: underline;}
+h1,
+
+h2 {
+  color: $medium;
+  font: $font2 2.5em;
+  font-weight: 300;
+}
+
+h3 {font-weight: 300;}
+
+div {
+  margin: auto;
+  font: $font1;
+  font-weight: 300;
+  .header {
+      margin-top: 40px;
+      .header-left{
+          h1.top {
+            font-size: 3.5em;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin-top: 0px;
+          }
+          h2.top {
+            font-size: 2em;
+            letter-spacing: 1px;
+            text-align: left;
+            margin-top: 20px;
+            margin-right: 15px;
+            padding-bottom: 0px;
+            font-weight: 300;
+            color: $grey;
+          }
+      }
+      .header-right {
+          text-align: right;
+          font-size: 0.8em;
+          h2 {margin-top: 10px;}
+          h3 {
+            font-size: 1.4em;
+            margin-top: -5px;
+          }
+          a {
+            font-weight: 500;
+            color: $light;
+            text-decoration: none;
+          }
+      }
+  }
+  .btn-primary {
+      background-color: $text-bg;
+      border-color: $text-bg;
+      min-width: 60px;
+  }
+  .btn-primary.active, .btn-primary.active:hover, .btn-primary.active.focus, .btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary:active:hover {background-color: $darker;border-color: $text-bg;}
+  .title {
+      text-align: left;
+  }
+  .text {
+      //background: $text-bg;
+      padding:15px;
+      float:left;
+      border-radius: 8px;
+  }
+  .full-width {
+      margin-bottom:30px;
+      h3 {color: $medium;}
+  }
+  .key {
+    margin-bottom: 50px;
+    .key1 {
+      padding:10px;
+      padding-left: 10%;
+    }
+    .key2 {
+      padding:10px;
+    }
+    h3 {
+        margin:0px 0px 5px 0px;
+        font-weight: 400;
+    }
+  }
+  .data-info {
+    margin-bottom: 50px;
+    span.emphasis {
+        color: $medium;
+        font-family: $font2;
+        font-weight: 400;
+        font-size: 1.2em;
+    }
+  }
+  .insight {
+    text-align: center;
+    margin: 40px 0 ;
+    h3 {
+        font-size:1.5em;
+        font-family: $font2;
+        font-weight: 300;
+        line-height: 1.5em;
+    }
+    h3 span.emphasis {
+        color: $medium;
+        font-weight: 600;
+    }
+  }
+  .stats {
+    display:inline-block;
+    padding:1%;
+    vertical-align: top;
+    text-align: center;
+    h3, h4 {margin-top:0px; font-weight:normal;}
+    h4 {margin-bottom: 0.75em;}
+  }
+  .no-inline {
+    display: block;
+  }
+}
+
+.divider {
+  margin-bottom:40px;
+  width:100%;
+  background: $darker;
+  padding: 30px 0;
+  font-style: italic;
+  margin-top: 60px;
+  display:table;
+  h2 {
+    text-align: center;
+    margin: 0px;
+  }
+  .left h2 {
+    color: $text-color;
+    font-family: $font2;
+    font-weight: 700;
+    font-size: 4em;
+    width:100%;
+    margin-bottom: 10px;
+  }
+  .right h2 {
+    color: $text-color;
+    font-weight: 300;
+    margin-bottom: 0px;
+    line-height: 40px;
+    text-align: center;
+  }
+}
+.note {color:#777; font-size: 14px;}
+.feedback {
+    text-align: center;
+    padding: 20px;
+    border-radius: 4px;
+    background: $text-bg;
+    h3 {margin: 0px;}
+}
+
+//Page specific CSS
+
+.story {
+    margin-top: 140px;
+    margin-bottom: 70px;
+    font-weight: bold;
+    h1, h2, h3 {color: $text-color; text-align: center; margin-top: 55px;}
+    h1 {font: 2em $font2;}
+    h2 {font: 1.5em $font1; color: $medium;}
+    h3 {font: 1.2em $font1; margin-top: 45px; color: $dark;}
+}
+.calculator {
+    text-align: center;
+    h1 {
+        color: $darker;
+        font-size: 2em;
+    }
+    input, button {
+        background: $text-bg;
+        padding: 15px;
+        border: none;
+        margin: 10px auto;
+        display: inline-block;
+        text-align: center;
+    }
+    input:focus {outline: 1px $text-color;}
+    .results {
+        margin-top: 70px;
+        h2 {
+            font: 28px $font2;
+            font-weight: 500;
+            span {color: $text-color; font-size:34px;}
+        }
+    }
+}
+.distribution {
+    text-align: center;
+    hr {margin-bottom: 50px; margin-top: 50px; display: none;}
+    h1 {font: 24px $font2; color:$text-color; span{color:$medium; font-weight: bold;}}
+    h2 {font: 20px $font2; color:$dark; span{font-weight: bold;}}
+    .top span, h2.top {color: $light;}
+    .bottom span, h2.bottom  {color: $dark;}
+    h3 {font: 20px $font1; color:$grey; span{font-weight: bold; font-size: 24px; color: $text-color;}}
+}
+@media (max-width:992px) {.distribution hr {display: block;}}
+
+#pctincome {
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: rgba(255,255,255,0.05);
+        stroke-width: 1;
+        shape-rendering: crispEdges;
+    }
+    path.line {stroke: $darker;}
+}
+
+div.header {
+    min-height:150px;
+    margin-top: 0px;
+    padding-top: 40px;
+    .header-left{
+        max-width:100%;
+        h1.top {color: $text-color; text-align: left;}
+        h2 {color: $grey; font-weight: 400; margin-top: 5px; text-align: left; margin-bottom: 15px;}
+    }
+}
+
+.header-bg {
+    background: url('img/bg.png');
+    background-position: center;
+    background-size: cover;
+}
+.btn-group {
+    margin: auto;
+    .btn, .btn-default {
+        font: 1.1em 'Roboto Condensed';
+        color: $text-color;
+        input {
+            background: none;
+            border: none;
+        }
+    }
+}
+.btn.active.focus {
+    outline: none;
+}
+
+svg {
+    text {
+        fill: $text-color;
+    }
+    path.domain {
+        fill: $darkest;
+    }
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    font: 20px 'Roboto';
+    font-weight: 600;
+    width: 60px;
+    height: 32px;
+    padding: 8px;
+    background: $darker;
+    border-radius: 2px;
+    pointer-events: none;
+    line-height: 16px;
+}
+path.line {
+    stroke: rgba(256,256,256,0.3);
+    fill: none;
+    stroke-width: 2px;
+}
+path.domain, g.tick line {
+    stroke: #aaa;
+}
+path#USA {
+    stroke: red;
+    stroke-width: 2.5px;
+}
+.data-point-text {
+    fill:$darkest;
+    font: 12px 'Roboto Condensed';
+    font-weight: 600;
+}
+.data-point rect {
+    fill: #fff;
+    fill-opacity: 0.1;
+}
+a.statebutton, a.statebutton2 {
+    padding:5px 12px;
+    background: $text-bg;
+    margin: 5px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-weight: 600;
+}
+a.statebutton:hover, a.statebutton2:hover {
+    background: $darker;
+    text-decoration: none;
+}
+.statebutton2.r_gain {
+    border: 2px solid #a03030;
+}
+.statebutton2.d_gain {
+    border: 2px solid #4b50af;
+}
+#chart2, #chart3, #chart4 {margin-bottom:40px;}
+#chart3 .btn-group>.btn-primary, #chart2 .btn-group>.btn-primary, #chart1 .btn-group>.btn-primary, #chart4 .btn-group>.btn-primary {margin: 10px; border-radius: 4px;}
+#chart2 .tooltip-holder, #chart3 .tooltip-holder2, #chart4 .tooltip-holder2 {position: relative; width:100%;}
+#chart2 div.tooltip2,  #chart3 div.tooltip3,  #chart4 div.tooltip3 {
+    position: absolute;
+    top:20px;
+    left: 55px;
+    background: $text-bg;
+    padding: 0px 10px;
+    border-radius: 4px;
+}
+#chart2 div.tooltip2 h1, #chart3 div.tooltip3 h1, #chart4 div.tooltip3 h1 {font-weight: 600;}
+@media (max-width:620px) {
+    div .header .header-left h1.top {font-size:1.8em;}
+    div .header .header-left h2 {font-size: 1.4em;}
+}
+
+circle#HI, circle#DC {fill: red;}
+
+.data-text {
+    h1#bad {color: #a03030; margin-bottom: 40px;}
+    h1 {
+        text-align: center;
+        font: 58px $font2;
+        span {
+            font-size: 20px;
+            color: $text-color;
+            margin-top:-15px;
+            position:absolute;
+        }
+    }
+    h3 {color: $dark;}
+}

@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Trump's Tax Plan - danneh.data</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,400italic,500italic,700,700italic,900,900italic,300italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic,300italic,300' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="//d3js.org/d3.v3.min.js"></script>
+    <script src="//d3js.org/topojson.v1.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-85732930-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</head>
+<body>
+    <div class="container-fluid titlebar" style="margin-top:-46px;">
+        <a href="/">danneh.data</a>
+    </div>
+    <div class="container-fluid header-bg" style="margin-top:46px;">
+        <div class = 'container'>
+            <div class = 'header'>
+                <div class = 'header-left col-lg-8 col-md-8 col-sm-12 col-xs-12'>
+                    <h1 class='top'>TRUMP'S TAX PLAN</h1>
+                    <h2>Inequality in Income Taxes</h2>
+                </div>
+                <div class = 'header-right col-lg-4 col-md-4 col-sm-12 col-xs-12'>
+                    <h2>DATA VISUALIZATION</h2>
+                    <h3>by <a href='https://twitter.com/DannyHenn'>DANNY HENN</a></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container story">
+        <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+            <h1> Donald Trump is planning to change the tax code in some pretty significant ways.
+            It's worth understanding how it will affect different tax payers.</h1>
+            <h2>Here, I will be focusing on <b>individual income taxes</b>.</h2>
+        </div>
+    </div>
+    <div class="data-info container">
+        <div class="title col-lg-3 col-sm-12">
+            <h2>What's the use of federal income taxes?</h2>
+        </div>
+        <div class='text col-lg-9 col-sm-12'>
+            <p>Individual income taxes collected by the federal government are an incredibly important source of government revenue.
+                In fact, individual income taxes represent <a href="http://www.cbpp.org/research/policy-basics-where-do-federal-tax-revenues-come-from" target="_blank">
+                about half of all federal revenue</a>.</p>
+            <p>On the other side of the equation, federal expenditures are fairly straightforward.
+                <a href="http://www.cbpp.org/research/federal-budget/policy-basics-where-do-our-federal-tax-dollars-go?fa=view&id=1258" target="_blank">About 2/3</a> is spent on defense, social security, and federal healthcare programs such as Medicare, Medicaid and CHIP.
+                Another 16% is spent on safety net programs and paying interest on debt.</p>
+            <p>All this is to say that individual income taxes <b>represent a significant portion of federal tax income</b>, and that a large portion of federal spending is <b>spoken for by vital non-discretionary programs</b>.
+                Therefore, any significant decrease in income tax receipts will have to be balanced by decreases in federal spending, otherwise deficit spending will increase significantly.</p>
+        </div>
+    </div><br />
+    <div class="data-info container" style="margin-top:50px;">
+        <div class="title col-lg-3 col-sm-12">
+            <h2>What are Trump's proposed changes?</h2>
+        </div>
+        <div class='text col-lg-9 col-sm-12'>
+            <p><b>Tax law is complicated.</b> That being said, the changes proposed by Trump can be broken down into a few categories:</p>
+            <h4>Fewer brackets, lower rates:</h4>
+            <p>Currently, there are 7 tax brackets, with marginal tax rates ranging from 10% up to 39.6%.
+                Trump's plan will have 3 tax brackets, with rates of 12%, 25%, and 33%.
+                The most consequential change here is the change in the top margin from 39.6% to 33%, which is partnered with a decrease in the
+                threshold from over $400,000 to $112,500 for individuals or $225,000 for joint filers.</p>
+            <h4>Larger deductions:</h4>
+            <p>While Trump's lowest marginal rate than currently, his plan also has significantly more generous standard deductions. A standard deduction
+                is the amount that you can automatically deduct from your taxable income if you do not want to itemize deductions. Trump's standard deductions are about twice as large as currently.</p>
+            <p>Trump will also be introducing a selection of additional deductions for childcare costs, which are aimed to offset his elimination of personal exemptions.</p>
+            <p>Learn more about <a href="https://en.wikipedia.org/wiki/Income_tax_in_the_United_States#Federal_income_tax_rates_for_individuals" target="_blank">our current system</a> and <a href="http://taxfoundation.org/article/details-and-analysis-donald-trump-tax-reform-plan-september-2016" target="_blank">Trump's proposed plan</a>.</p>
+        </div>
+    </div>
+    <div class="container story">
+        <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+            <h1>So what does this all mean for my bottom line?</h1>
+            <h2><b>Let's find out...</b></h2>
+        </div>
+    </div>
+    <div class="container calculator">
+        <div class="col-sm-5 col-xs-12">
+            <h1>My income is...</h1>
+            <input id="income" type="text" name='income' value="57000"></input>
+            <p class="note">Income is rounded to the nearest 1,000</p>
+        </div>
+        <div class="col-sm-5 col-xs-12">
+            <h1>I am filing...</h1>
+            <input type="radio" name='filing' value='Single' checked> Single<br>
+            <input type="radio" name='filing' value='Married'> Married
+        </div>
+        <div class="col-sm-offset-0 col-sm-2 col-xs-offset-4 col-xs-4">
+            <button type="button" value="Submit" onclick="return getTax()">Submit</button>
+        </div>
+        <div class="col-xs-12 results">
+            <h2>Under the current plan, you would pay taxes of <span id="current"></span>.</h2>
+            <h2>Under Trump's plan, you would pay taxes of <span id="trump"></span>.</h2>
+            <h2>That's a change of <span id="difference"></span>, increasing your after tax income by <span id="incomepct"></span>.</h2>
+        </div>
+    </div>
+    <div class="container story">
+        <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+            <h1 style="font-size:50px;">Yay!</h1>
+            <h1>In all likelihood, you will be paying less taxes under Trump.</h1>
+            <h3>The only people who will be paying more will be individual filers with income between 163K and 459K.</h3>
+        </div>
+    </div>
+    <div class="data-info container" style="margin-top:50px;">
+        <div class="title col-lg-3 col-sm-12">
+            <h2>How much less tax will be paid in total?</h2>
+        </div>
+        <div class='text col-lg-9 col-sm-12'>
+            <p>In total, about <b>$180 billion</b> less will be paid in federal individual income taxes annually.
+                This number is estimated based on taking a weighted average of results for married and single filers, using a 60 / 40 split.
+                <span class="note">Note: The distribution of this money is more important than the amount.</span></p>
+            <p>This is a significant chunk of total federal spending - more than a 10% reduction.</p>
+        </div>
+    </div>
+    <div class="container story">
+        <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+            <h1>How does Trump's plan distribute this <b>$180,000,000,000</b>?</h1>
+        </div>
+    </div>
+    <div class="container distribution">
+        <div class="col-md-4 col-sm-12 pie" id="p50">
+            <h1 class="top">The top <b>50%</b> of earners will receive <span id="amt"></span> (<span id="pct"></span>)</h1>
+            <h2 class="top">That's on average <span id="perhh"></span> per household.</h2>
+            <div id='pie1'></div>
+            <h1 class="bottom">... while the bottom <b>50%</b> of earners will receive <span id="amt"></span> (<span id="pct"></span>).</h1>
+            <h2 class="bottom">That's on average <span id="perhh"></span> per household.</h2>
+            <h3>The top 50% get <span id="disp"></span> more than if distributed evenly.</h3>
+            <hr>
+        </div>
+        <div class="col-md-4 col-sm-12 pie" id="p90">
+            <h1 class="top">The top <b>10%</b> of earners will receive <span id="amt"></span> (<span id="pct"></span>)</h1>
+            <h2 class="top">That's on average <span id="perhh"></span> per household.</h2>
+            <div id='pie2'></div>
+            <h1 class="bottom">... while the bottom <b>90%</b> of earners will receive <span id="amt"></span> (<span id="pct"></span>).</h1>
+            <h2 class="bottom">That's on average <span id="perhh"></span> per household.</h2>
+            <h3>The top 10% get <span id="disp"></span> more than if distributed evenly.</h3>
+            <hr>
+        </div>
+        <div class="col-md-4 col-sm-12 pie" id="p99">
+            <h1 class="top">The top <b>1%</b> of earners will receive <span id="amt"></span> (<span id="pct"></span>)</h1>
+            <h2 class="top">That's on average <span id="perhh"></span> per household.</h2>
+            <div id='pie3'></div>
+            <h1 class="bottom">... while the bottom <b>99%</b> of earners will receive <span id="amt"></span> (<span id="pct"></span>).</h1>
+            <h2 class="bottom">That's on average <span id="perhh"></span> per household.</h2>
+            <h3>The top 1% get <span id="disp"></span> more than if distributed evenly.</h3>
+        </div>
+    </div>
+    <div class="container story">
+        <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+            <h1>As might be expected, this massive tax break disproportionately benefits the top income earners.</h1>
+            <h2>By far the largest beneficiaries are those in the top 1% of earners:</h2>
+        </div>
+        <div id='pctincome'></div>
+    </div>
+    <div class="container story">
+        <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+            <h1>Given the distribution of the tax cuts and the types of federal expenditures that these taxes fund, Trump's tax plan is a <b>massive transfer of wealth from the many to the wealthiest 1%<b>.</h1>
+            <h2>This theme is constant throughout Trump's tax proposals, including reductions in capital income and corporate rates, as well as the elimination of the estate tax and gift tax.</h2>
+        </div>
+    </div>
+    <div class="data-info container" style="margin-top:50px;">
+        <div class="title col-lg-3 col-sm-12">
+            <h2>What's the bigger picture?</h2>
+        </div>
+        <div class='text col-lg-9 col-sm-12'>
+            <p>This analysis highlights a broader theme of Trump's tax plans: large reductions in federal tax revenues without planned cuts in expenditures.
+                This means there will be significant increases in defecit spending - the most conservative estimate would be $2.6 trillion over a ten year period. The highest estimate is nearly $6 trillion.</p>
+            <p>You can read the complete analysis done by <a href="https://taxfoundation.org/details-and-analysis-donald-trump-tax-reform-plan-september-2016" target="_blank">the Tax Foundation</a>.</p>
+            <p>The unfunded tax cuts, if implemented, would have to be paid for somehow. I think we already know how that may take form given policy proposals from top Republicans and lessons from history -
+                major cuts to entitlement programs and other government programs.
+                President Trump has promised not to cut social security or Medicare, and has promised expanded and more effective coverage than Obamacare. He wants to have his cake and eat it too.</p>
+        </div>
+    </div>
+    <div class="container story">
+        <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+            <h2>There are tradeoffs in policymaking. Massive tax cuts need to be paid for. <b>We need to be cognizant of this balancing act.</b></h2>
+            <h1>Trump's tax plan is unrealistic and unfair. It would transfer funds that help our nation's most vulnerable to the wealthiest 1%.</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="feedback col-sm-offset-2 col-sm-8 col-xs-12">
+            <h3>Questions? Comments? Criticism? Find me <a href="https://twitter.com/DannyHenn" target="_blank">@DannyHenn</a></h3>
+            <br />
+            <h4><a href="https://github.com/dahenn/turnout" target="_blank">Find the code for this project</a></h4>
+        </div>
+    </div>
+    <br />
+
+
+
+<!-- load the d3.js library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+<script src="//d3js.org/d3.v4.min.js"></script>
+
+<script src="bootstrap.min.js"></script>
+<script src="js/chart1.js"></script>
+<script src="js/chart2.js"></script>
+<script src="js/chart3.js"></script>
+<script>getTax()</script>
+</body>
