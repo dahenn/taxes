@@ -1,6 +1,6 @@
 $font1: 'Roboto';
 $font2: 'Roboto Condensed';
-$text-color: #ecf8ec;
+$text-color: #d9edd9;
 $darkest: #070d07;
 $darker: #315631;
 $dark: #417241;
@@ -199,13 +199,14 @@ div {
     padding: 20px;
     border-radius: 4px;
     background: $text-bg;
+    margin-top: 60px;
     h3 {margin: 0px;}
 }
 
 //Page specific CSS
 
 .story {
-    margin-top: 140px;
+    margin-top: 340px;
     margin-bottom: 70px;
     font-weight: bold;
     h1, h2, h3 {color: $text-color; text-align: center; margin-top: 55px;}
@@ -213,6 +214,7 @@ div {
     h2 {font: 1.5em $font1; color: $medium;}
     h3 {font: 1.2em $font1; margin-top: 45px; color: $dark;}
 }
+.story.first {margin-top: 20px;}
 .calculator {
     text-align: center;
     h1 {
@@ -228,6 +230,7 @@ div {
         text-align: center;
     }
     input:focus {outline: 1px $text-color;}
+    button#submit {margin-top: 40px;}
     .results {
         margin-top: 70px;
         h2 {

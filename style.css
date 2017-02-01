@@ -13,7 +13,7 @@ $text-bg: #333;
   src: url("../fonts/SFChaerilidae.ttf") format("truetype"); }
 body {
   background: #070d07;
-  color: #ecf8ec;
+  color: #d9edd9;
   text-align: justify;
   line-height: 1.5em;
   font-family: "Roboto";
@@ -151,14 +151,14 @@ div {
     text-align: center;
     margin: 0px; }
   .divider .left h2 {
-    color: #ecf8ec;
+    color: #d9edd9;
     font-family: "Roboto Condensed";
     font-weight: 700;
     font-size: 4em;
     width: 100%;
     margin-bottom: 10px; }
   .divider .right h2 {
-    color: #ecf8ec;
+    color: #d9edd9;
     font-weight: 300;
     margin-bottom: 0px;
     line-height: 40px;
@@ -172,16 +172,17 @@ div {
   text-align: center;
   padding: 20px;
   border-radius: 4px;
-  background: #0d1d0d; }
+  background: #0d1d0d;
+  margin-top: 60px; }
   .feedback h3 {
     margin: 0px; }
 
 .story {
-  margin-top: 140px;
+  margin-top: 340px;
   margin-bottom: 70px;
   font-weight: bold; }
   .story h1, .story h2, .story h3 {
-    color: #ecf8ec;
+    color: #d9edd9;
     text-align: center;
     margin-top: 55px; }
   .story h1 {
@@ -193,6 +194,9 @@ div {
     font: 1.2em "Roboto";
     margin-top: 45px;
     color: #417241; }
+
+.story.first {
+  margin-top: 20px; }
 
 .calculator {
   text-align: center; }
@@ -207,14 +211,16 @@ div {
     display: inline-block;
     text-align: center; }
   .calculator input:focus {
-    outline: 1px #ecf8ec; }
+    outline: 1px #d9edd9; }
+  .calculator button#submit {
+    margin-top: 40px; }
   .calculator .results {
     margin-top: 70px; }
     .calculator .results h2 {
       font: 28px "Roboto Condensed";
       font-weight: 500; }
       .calculator .results h2 span {
-        color: #ecf8ec;
+        color: #d9edd9;
         font-size: 34px; }
 
 .distribution {
@@ -225,7 +231,7 @@ div {
     display: none; }
   .distribution h1 {
     font: 24px "Roboto Condensed";
-    color: #ecf8ec; }
+    color: #d9edd9; }
     .distribution h1 span {
       color: #549555;
       font-weight: bold; }
@@ -244,7 +250,7 @@ div {
     .distribution h3 span {
       font-weight: bold;
       font-size: 24px;
-      color: #ecf8ec; }
+      color: #d9edd9; }
 
 @media (max-width: 992px) {
   .distribution hr {
@@ -265,7 +271,7 @@ div.header {
   div.header .header-left {
     max-width: 100%; }
     div.header .header-left h1.top {
-      color: #ecf8ec;
+      color: #d9edd9;
       text-align: left; }
     div.header .header-left h2 {
       color: #aaa;
@@ -283,7 +289,7 @@ div.header {
   margin: auto; }
   .btn-group .btn, .btn-group .btn-default {
     font: 1.1em 'Roboto Condensed';
-    color: #ecf8ec; }
+    color: #d9edd9; }
     .btn-group .btn input, .btn-group .btn-default input {
       background: none;
       border: none; }
@@ -292,7 +298,7 @@ div.header {
   outline: none; }
 
 svg text {
-  fill: #ecf8ec; }
+  fill: #d9edd9; }
 svg path.domain {
   fill: #070d07; }
 
@@ -389,7 +395,7 @@ circle#HI, circle#DC {
   font: 58px "Roboto Condensed"; }
   .data-text h1 span {
     font-size: 20px;
-    color: #ecf8ec;
+    color: #d9edd9;
     margin-top: -15px;
     position: absolute; }
 .data-text h3 {

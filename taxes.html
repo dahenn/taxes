@@ -51,7 +51,7 @@
             </div>
         </div>
     </div>
-    <div class="container story">
+    <div class="container story first">
         <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
             <h1> Donald Trump is planning to change the tax code in some pretty significant ways.
             It's worth understanding how it will affect different taxpayers.</h1>
@@ -83,7 +83,7 @@
             <p>Currently, there are 7 tax brackets, with marginal tax rates ranging from 10% up to 39.6%.
                 Trump's plan will have 3 tax brackets, with rates of 12%, 25%, and 33%.
                 The most consequential change here is the change in the top margin from 39.6% to 33%, which is partnered with a decrease in the
-                threshold from over $400,000 to $112,500 for individuals or $225,000 for joint filers.</p>
+                top margin threshold from over $400,000 to $112,500 for individuals or $225,000 for joint filers.</p>
             <h4>Larger deductions:</h4>
             <p>While Trump's lowest marginal rate than currently, his plan also has significantly more generous standard deductions. A standard deduction
                 is the amount that you can automatically deduct from your taxable income if you do not want to itemize deductions. Trump's standard deductions are about twice as large as currently.</p>
@@ -109,10 +109,10 @@
             <input type="radio" name='filing' value='Married'> Married
         </div>
         <div class="col-sm-offset-0 col-sm-2 col-xs-offset-4 col-xs-4">
-            <button type="button" value="Submit" onclick="return getTax()">Submit</button>
+            <button id='submit' type="button" value="Submit" onclick="return getTax()">Submit</button>
         </div>
         <div class="col-xs-12 results">
-            <h2>Under the current plan, you would pay taxes of <span id="current"></span>.</h2>
+            <h2>Under the current plan, you pay taxes of <span id="current"></span>.</h2>
             <h2>Under Trump's plan, you would pay taxes of <span id="trump"></span>.</h2>
             <h2>That's a change of <span id="difference"></span>, increasing your after tax income by <span id="incomepct"></span>.</h2>
         </div>
@@ -138,6 +138,7 @@
     <div class="container story">
         <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
             <h1>How does Trump's plan distribute this <b>$180,000,000,000</b>?</h1>
+            <h2>Here's a few ways of looking at it...</h2>
         </div>
     </div>
     <div class="container distribution">
@@ -177,8 +178,8 @@
     </div>
     <div class="container story">
         <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
-            <h1>Given the distribution of the tax cuts and the types of federal expenditures that these taxes fund, Trump's tax plan is a <b>massive transfer of wealth from the many to the wealthiest 1%<b>.</h1>
-            <h2>This theme is constant throughout Trump's tax proposals, including reductions in capital income and corporate rates, as well as the elimination of the estate tax and gift tax.</h2>
+            <h1>Given the distribution of the tax cuts and the types of federal expenditures that these taxes fund, Trump's tax plan is a <b>massive transfer of wealth from the most in need to the wealthiest 1%<b>.</h1>
+            <h2>This theme is constant throughout Trump's tax proposals, including reductions in capital income taxes and corporate rates, as well as the elimination of the estate tax and gift tax.</h2>
         </div>
     </div>
     <div class="data-info container" style="margin-top:50px;">
@@ -191,15 +192,16 @@
             <p>You can read the <a href="https://taxfoundation.org/details-and-analysis-donald-trump-tax-reform-plan-september-2016" target="_blank">complete analysis</a> done by the Tax Foundation.</p>
             <p>The unfunded tax cuts, if implemented, would have to be paid for somehow. I think we already know how that may take form given policy proposals from top Republicans and lessons from history -
                 major cuts to entitlement programs and other government programs. Remember - the vast majority of the Federal budget is already spoken for with important social programs and other non-discretionary programs.
-                President Trump has promised not to cut social security or Medicare, and has promised expanded and more effective coverage than Obamacare. He wants to have his cake and eat it too. Does this really seem possible?</p>
+                President Trump has promised not to cut social security or Medicare, and has promised expanded and more effective coverage than Obamacare. <b>He wants to have his cake and eat it too.</b> Does this really seem possible?</p>
         </div>
     </div>
-    <div class="container story">
+    <div class="container story first">
         <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
             <h2>There are tradeoffs in policymaking. Massive tax cuts need to be paid for. <b>We need to be cognizant of this balancing act.</b></h2>
-            <h1>Trump's tax plan is <b>unrealistic</b> and <b>unfair</b>. It would transfer funds that help our nation's most vulnerable to the wealthiest 1%.</h1>
+            <h1>Trump's tax plan is <b>unrealistic</b> and <b>unfair</b>.</h1>
         </div>
     </div>
+    <div class="container story"></div>
     <div class="data-info container" style="margin-top:50px;">
         <div class="title col-lg-3 col-sm-12">
             <h2>The Nitty Gritty</h2>
@@ -223,7 +225,6 @@
             <p>For further details, you can review my R file in the GitHub depository.</p>
         </div>
     </div>
-    <br>
     <div class="container">
         <div class="feedback col-sm-offset-2 col-sm-8 col-xs-12">
             <h3>Questions? Comments? Criticism? Find me <a href="https://twitter.com/DannyHenn" target="_blank">@DannyHenn</a></h3>
@@ -231,7 +232,7 @@
             <h4><a href="https://github.com/dahenn/taxes" target="_blank">Find the code for this project</a></h4>
         </div>
     </div>
-    <br />
+    <div class="container story first"></div>
 
 
 
