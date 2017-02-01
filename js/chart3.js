@@ -153,7 +153,7 @@ d3.csv("data/avgs.csv", function(error, data) {
 
 		info.select("text.y1").text('Income Percentile: ' + (d.pctile_round-1) + ' to ' + d.pctile_round);
 		info.select("text.y2").text('Tax Cut: $' + d.tax_diff.formatMoney(0));
-        info.select("text.y3").text('Average Income: $' + d.inc_round.formatMoney(0));
+        info.select("text.y3").text('Median Income: $' + d.inc_round.formatMoney(0));
         var format = d3.format('.2');
         info.select("text.y4").text('Post Tax Income Increase: ' + format(d.pct_tax_diff*100) + "%");
 

@@ -172,7 +172,7 @@ hhinc$pct_cat <- cut(hhinc$pctile_round, breaks = seq(0,100,by=1), include.lowes
 avgs <- hhinc %>% group_by(pctile_round, pct_cat) %>% summarize(hhinc = mean(hhincome), medinc = median(hhincome), current = mean(current), trump = mean(trump), tax_diff = mean(tax_diff), pct_tax_diff = mean(pct_tax_diff), tax_diff_total=mean(tax_diff_total))
 ggplot(avgs, aes(x=pctile_round, y=pct_tax_diff)) + geom_line()
 ggplot(avgs, aes(x=pctile_round-1, y=-tax_diff)) + geom_line()
-avgs$inc_round <- round(avgs$hhinc/1000)*1000
+avgs$inc_round <- round(avgs$medinc/1000)*1000
 write.csv(avgs, file = 'data/avgs.csv', row.names = FALSE, na = '0')
 
 

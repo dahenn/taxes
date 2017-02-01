@@ -54,7 +54,7 @@
     <div class="container story">
         <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
             <h1> Donald Trump is planning to change the tax code in some pretty significant ways.
-            It's worth understanding how it will affect different tax payers.</h1>
+            It's worth understanding how it will affect different taxpayers.</h1>
             <h2>Here, I will be focusing on <b>individual income taxes</b>.</h2>
         </div>
     </div>
@@ -69,7 +69,7 @@
             <p>On the other side of the equation, federal expenditures are fairly straightforward.
                 <a href="http://www.cbpp.org/research/federal-budget/policy-basics-where-do-our-federal-tax-dollars-go?fa=view&id=1258" target="_blank">About 2/3</a> is spent on defense, social security, and federal healthcare programs such as Medicare, Medicaid and CHIP.
                 Another 16% is spent on safety net programs and paying interest on debt.</p>
-            <p>All this is to say that individual income taxes <b>represent a significant portion of federal tax income</b>, and that a large portion of federal spending is <b>spoken for by vital non-discretionary programs</b>.
+            <p>All this is to say that <b>individual income taxes represent a significant portion of federal tax income</b>, and that a large portion of federal spending is <b>spoken for by vital non-discretionary programs</b>.
                 Therefore, any significant decrease in income tax receipts will have to be balanced by decreases in federal spending, otherwise deficit spending will increase significantly.</p>
         </div>
     </div><br />
@@ -130,8 +130,8 @@
         </div>
         <div class='text col-lg-9 col-sm-12'>
             <p>In total, about <b>$180 billion</b> less will be paid in federal individual income taxes annually.
-                This number is estimated based on taking a weighted average of results for married and single filers, using a 60 / 40 split.
-                <span class="note">Note: The distribution of this money is more important than the amount.</span></p>
+                This number is estimated based on taking a weighted average of results for married and single filers, using a 60 / 40 split.</p>
+                <p class="note">Note: The distribution of this money is more important than the amount.</p>
             <p>This is a significant chunk of total federal spending - more than a 10% reduction.</p>
         </div>
     </div>
@@ -188,23 +188,47 @@
         <div class='text col-lg-9 col-sm-12'>
             <p>This analysis highlights a broader theme of Trump's tax plans: large reductions in federal tax revenues without planned cuts in expenditures.
                 This means there will be significant increases in defecit spending - the most conservative estimate would be $2.6 trillion over a ten year period. The highest estimate is nearly $6 trillion.</p>
-            <p>You can read the complete analysis done by <a href="https://taxfoundation.org/details-and-analysis-donald-trump-tax-reform-plan-september-2016" target="_blank">the Tax Foundation</a>.</p>
+            <p>You can read the <a href="https://taxfoundation.org/details-and-analysis-donald-trump-tax-reform-plan-september-2016" target="_blank">complete analysis</a> done by the Tax Foundation.</p>
             <p>The unfunded tax cuts, if implemented, would have to be paid for somehow. I think we already know how that may take form given policy proposals from top Republicans and lessons from history -
-                major cuts to entitlement programs and other government programs.
-                President Trump has promised not to cut social security or Medicare, and has promised expanded and more effective coverage than Obamacare. He wants to have his cake and eat it too.</p>
+                major cuts to entitlement programs and other government programs. Remember - the vast majority of the Federal budget is already spoken for with important social programs and other non-discretionary programs.
+                President Trump has promised not to cut social security or Medicare, and has promised expanded and more effective coverage than Obamacare. He wants to have his cake and eat it too. Does this really seem possible?</p>
         </div>
     </div>
     <div class="container story">
         <div class="col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
             <h2>There are tradeoffs in policymaking. Massive tax cuts need to be paid for. <b>We need to be cognizant of this balancing act.</b></h2>
-            <h1>Trump's tax plan is unrealistic and unfair. It would transfer funds that help our nation's most vulnerable to the wealthiest 1%.</h1>
+            <h1>Trump's tax plan is <b>unrealistic</b> and <b>unfair</b>. It would transfer funds that help our nation's most vulnerable to the wealthiest 1%.</h1>
         </div>
     </div>
+    <div class="data-info container" style="margin-top:50px;">
+        <div class="title col-lg-3 col-sm-12">
+            <h2>The Nitty Gritty</h2>
+        </div>
+        <div class='text col-lg-9 col-sm-12'>
+            <h4>What were my simplifying assumptions?</h4>
+            <p>Since tax law is so complex, I made some simplifying assumptions to make reaching some conclusions possible.
+                These assumptions were conservative; that is, they likely understated the redistributive effects of Trump's plan.</p>
+            <ul>
+                <li>Everyone takes the standard deductions and normal personal exemptions.</li>
+                <li>Trump's proposed childcare deductions are not present.</li>
+                <li>Only single and married filers were examined (there are additional filing statuses under current law).</li>
+            </ul>
+            <h4>How did I make my calculations?</h4>
+            <p>Calculations of tax amounts due were based on different formulas for each plan. The tax brackets were gathered from
+            <a href="https://en.wikipedia.org/wiki/Income_tax_in_the_United_States#Federal_income_tax_rates_for_individuals" target="_blank">current law</a> and <a href="http://taxfoundation.org/article/details-and-analysis-donald-trump-tax-reform-plan-september-2016" target="_blank">Trump's proposed plan</a>.</p>
+            <p>Data on the current income distribution in the United States was gathered from the March 2016 <a href="https://en.wikipedia.org/wiki/Current_Population_Survey" target="_blank">Current Population Survey (CPS)</a>, which is produced by the US Census Bureau and the Bureau of Labor Statistics.
+                This data was accessed via the <a href="https://cps.ipums.org/cps/" target="_blank">University of Minnesota's IPUMS-CPS project</a>.</p>
+            <p>This CPS sampled 69,458 households, from which I extrapolated a national income distribution. Total taxation changes were also extrapolated based on this sample to the roughly <a href="https://www.census.gov/hhes/families/files/hh1.csv" target="_blank">125 million total households</a> in the US.</p>
+            <p>My assumption of 60% married filers versus 40% single filers is based on US census data on <a href="http://www.census.gov/hhes/families/data/cps2016H.html" target="_blank">Households by Type</a>.</p>
+            <p>For further details, you can review my R file in the GitHub depository.</p>
+        </div>
+    </div>
+    <br>
     <div class="container">
         <div class="feedback col-sm-offset-2 col-sm-8 col-xs-12">
             <h3>Questions? Comments? Criticism? Find me <a href="https://twitter.com/DannyHenn" target="_blank">@DannyHenn</a></h3>
             <br />
-            <h4><a href="https://github.com/dahenn/turnout" target="_blank">Find the code for this project</a></h4>
+            <h4><a href="https://github.com/dahenn/taxes" target="_blank">Find the code for this project</a></h4>
         </div>
     </div>
     <br />
